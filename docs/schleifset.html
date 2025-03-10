@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/assets/style.css">
+
+  <title>Schleifset - Steinschleifen</title>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+  
+  <nav class="bg-white shadow-md text-black">
+  <div class="max-w-5xl mx-auto flex justify-between items-center p-4">
+    <!-- Mobile Menu Button -->
+    <button id="nav-toggle" class="text-black text-2xl md:hidden focus:outline-none" aria-expanded="false">
+      ☰
+    </button>
+
+    <!-- Navigation Menu -->
+    <ul id="nav-menu" class="hidden md:flex space-x-6 text-lg">
+      <li><a href="index.html" class="hover:text-gray-600">Home</a></li>
+      <li><a href="kurse.html" class="hover:text-gray-600">Kurse</a></li>
+      <li><a href="schulen.html" class="hover:text-gray-600">Schulen</a></li>
+      <li><a href="schleifset.html" class="hover:text-gray-600">Schleifset</a></li>
+      <li><a href="ausstellungen.html" class="hover:text-gray-600">Ausstellungen</a></li>
+      <li><a href="kontakt.html" class="hover:text-gray-600">Kontakt</a></li>
+    </ul>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="fixed inset-0 bg-black bg-opacity-90 hidden flex flex-col items-center justify-center space-y-6 text-lg z-50">
+    <button id="nav-close" class="absolute top-5 right-5 text-white text-3xl">&times;</button>
+    <a href="index.html" class="text-white hover:text-gray-600">Home</a>
+    <a href="kurse.html" class="text-white hover:text-gray-600">Kurse</a>
+    <a href="schulen.html" class="text-white hover:text-gray-600">Schulen</a>
+    <a href="schleifset.html" class="text-white hover:text-gray-600">Schleifset</a>
+    <a href="ausstellungen.html" class="text-white hover:text-gray-600">Ausstellungen</a>
+    <a href="kontakt.html" class="text-white hover:text-gray-600">Kontakt</a>
+  </div>
+</nav>
+
+<script>
+  const navToggle = document.getElementById('nav-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const navClose = document.getElementById('nav-close');
+
+  navToggle.addEventListener('click', () => {
+    mobileMenu.classList.remove('hidden');
+    navToggle.setAttribute('aria-expanded', 'true');
+  });
+
+  navClose.addEventListener('click', () => {
+    mobileMenu.classList.add('hidden');
+    navToggle.setAttribute('aria-expanded', 'false');
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener('click', (event) => {
+    if (!mobileMenu.contains(event.target) && !navToggle.contains(event.target)) {
+      mobileMenu.classList.add('hidden');
+      navToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+</script>
+
+
+  <!-- Hero Section -->
+  <section class="relative">
+    <img src="/assets/header-image.png" 
+         alt="Steinschleifen Header" 
+         class="w-full object-cover h-60">
+    <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-30 text-center px-4">
+      <h1 class="text-5xl font-bold text-white">STEINSCHLEIFEN</h1>
+      <p class="text-xl text-white mt-2">Steine schleifen von Hand und auf der Maschine</p>
+    </div>
+  </section>
+
+  <main class="max-w-6xl mx-auto p-6 bg-white mt-6">
+    
+  <section class="text-center mt-8 container">
+    <h2>Schleifset</h2>
+    <p class="max-w-3xl mx-auto">
+      Steinschleifen von Hand – ein vielseitiges Set für kreative, pädagogische und therapeutische Anwendungen.
+    </p>
+  </section>
+
+  <section class="mt-20 container flex flex-col md:flex-row items-center gap-16">
+    <div class="md:w-1/2">
+      <h3>Für verschiedene Einsatzbereiche</h3>
+      <ul class="list-disc pl-6">
+        <li>Künstlerische Tätigkeiten</li>
+        <li>Schulunterricht mit Kindern & Jugendlichen</li>
+        <li>Therapeutische Zwecke</li>
+      </ul>
+    </div>
+    <div class="md:w-1/2">
+      <img src="/assets/schleifset/Schleifset.jpg" alt="Schleifset" class="rounded-3xl w-full h-auto md:h-[300px] object-cover shadow-xl">
+    </div>
+  </section>
+
+  <section class="mt-8 container border-t border-gray-300 pt-10">
+    <h3>Zubehör</h3>
+    <ul class="list-disc pl-6">
+      <li>Anleitung (DE/FR/IT)</li>
+      <li>5 Schleifpulver (80, 220, 500, 1000, Politur)</li>
+      <li>Metallplatte (ø 25cm, rostfrei)</li>
+      <li>Politurbrett (Holz)</li>
+    </ul>
+  </section>
+
+  <section class="mt-8 container border-t border-gray-300 pt-10">
+    <h3>Kosten</h3>
+    <p class="font-bold">CHF 105.-</p>
+    <p class="mt-4">Das Schleifset kann per Mail oder Telefon bestellt werden:</p>
+    <p class="font-semibold mt-6">E-Mail: <a href="mailto:stein@mail.ch" class="text-blue-600 hover:underline">stein@mail.ch</a></p>
+    <p class="font-semibold mt-2">Telefon: 079 609 29 73</p>
+  </section>
+
+  <section class="mt-8 container border-t border-gray-300 pt-10 pb-10">
+    <h3>Weitere Informationen</h3>
+    <ul class="list-disc pl-6">
+      <li>✔ Für Kinder (ab 8 Jahre) und Erwachsene</li>
+      <li>✔ Alle Bestandteile können einzeln nachbestellt werden</li>
+      <li>✔ Fragen Sie uns für individuelle Einrichtungen an</li>
+      <li>✔ Eignet sich als Geschenk</li>
+      <li>✔ Versand möglich</li>
+    </ul>
+  </section>
+
+  </main>
+
+  <footer class="bg-white min-h-12">
+</footer>
+
+
+</body>
+</html>

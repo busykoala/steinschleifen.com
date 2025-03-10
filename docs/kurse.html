@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/assets/style.css">
+
+  <title>Kurse - Steinschleifen</title>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+  
+  <nav class="bg-white shadow-md text-black">
+  <div class="max-w-5xl mx-auto flex justify-between items-center p-4">
+    <!-- Mobile Menu Button -->
+    <button id="nav-toggle" class="text-black text-2xl md:hidden focus:outline-none" aria-expanded="false">
+      ☰
+    </button>
+
+    <!-- Navigation Menu -->
+    <ul id="nav-menu" class="hidden md:flex space-x-6 text-lg">
+      <li><a href="index.html" class="hover:text-gray-600">Home</a></li>
+      <li><a href="kurse.html" class="hover:text-gray-600">Kurse</a></li>
+      <li><a href="schulen.html" class="hover:text-gray-600">Schulen</a></li>
+      <li><a href="schleifset.html" class="hover:text-gray-600">Schleifset</a></li>
+      <li><a href="ausstellungen.html" class="hover:text-gray-600">Ausstellungen</a></li>
+      <li><a href="kontakt.html" class="hover:text-gray-600">Kontakt</a></li>
+    </ul>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="fixed inset-0 bg-black bg-opacity-90 hidden flex flex-col items-center justify-center space-y-6 text-lg z-50">
+    <button id="nav-close" class="absolute top-5 right-5 text-white text-3xl">&times;</button>
+    <a href="index.html" class="text-white hover:text-gray-600">Home</a>
+    <a href="kurse.html" class="text-white hover:text-gray-600">Kurse</a>
+    <a href="schulen.html" class="text-white hover:text-gray-600">Schulen</a>
+    <a href="schleifset.html" class="text-white hover:text-gray-600">Schleifset</a>
+    <a href="ausstellungen.html" class="text-white hover:text-gray-600">Ausstellungen</a>
+    <a href="kontakt.html" class="text-white hover:text-gray-600">Kontakt</a>
+  </div>
+</nav>
+
+<script>
+  const navToggle = document.getElementById('nav-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const navClose = document.getElementById('nav-close');
+
+  navToggle.addEventListener('click', () => {
+    mobileMenu.classList.remove('hidden');
+    navToggle.setAttribute('aria-expanded', 'true');
+  });
+
+  navClose.addEventListener('click', () => {
+    mobileMenu.classList.add('hidden');
+    navToggle.setAttribute('aria-expanded', 'false');
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener('click', (event) => {
+    if (!mobileMenu.contains(event.target) && !navToggle.contains(event.target)) {
+      mobileMenu.classList.add('hidden');
+      navToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+</script>
+
+
+  <!-- Hero Section -->
+  <section class="relative">
+    <img src="/assets/header-image.png" 
+         alt="Steinschleifen Header" 
+         class="w-full object-cover h-60">
+    <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-30 text-center px-4">
+      <h1 class="text-5xl font-bold text-white">STEINSCHLEIFEN</h1>
+      <p class="text-xl text-white mt-2">Steine schleifen von Hand und auf der Maschine</p>
+    </div>
+  </section>
+
+  <main class="max-w-6xl mx-auto p-6 bg-white mt-6">
+    
+  <section class="text-center mt-8">
+    <h2>Steinschleifkurse</h2>
+    <p class="max-w-3xl mx-auto">
+      Entdecken Sie die Kunst des Steinschleifens – von Hand oder mit der Maschine. Unsere Kurse bieten Ihnen die Möglichkeit, kreative und handwerkliche Techniken zu erlernen und einzigartige Steinkreationen zu gestalten.
+    </p>
+  </section>
+
+  <section class="mt-20 container flex flex-col md:flex-row items-center md:items-start gap-12">
+    <div class="md:w-1/2">
+      <h3>Tageskurse</h3>
+      <p>Ideal für Anfänger und Fortgeschrittene</p>
+      <ul class="leading-relaxed space-y-3 mt-3">
+        <li><span class="font-semibold text-gray-900">Gestalten Sie Schmuck & freie Formen</span><br>lernen Sie das Schleifen, Sägen & Bohren von Steinen.</li>
+        <li><span class="font-semibold text-gray-900">Kurszeiten:</span><br>10 – 17 Uhr, jeweils samstags (Termine weiter unten)</li>
+        <li><span class="font-semibold text-gray-900">Kursgebühr: CHF 190.-</span><br>inkl. Steine, Material & Mittagessen</li>
+        <li class="italic">Preisreduktion auf Anfrage, Kinder erhalten 50% Ermäßigung.</li>
+      </ul>
+    </div>
+    <div class="md:w-1/2 mt-8 md:mt-0">
+      <img src="/assets/kurse/Steinschleif-Kurs.jpg" alt="Steinschleifkurs" class="rounded-lg w-full h-80 object-cover">
+    </div>
+  </section>
+
+  <section class="mt-8 container border-t border-gray-300 pt-8">
+    <h3>Veranstaltungsort</h3>
+    <p>Chalet Liechti, Blasenneuhaus 218, 3508 Arni</p>
+    <p class="mt-4">
+      Anfahrt:
+      <a href="#" class="text-blue-600 hover:underline font-medium">mit dem Auto (Karte)</a>
+      &nbsp;|&nbsp;
+      <a href="#" class="text-blue-600 hover:underline font-medium">mit dem Zug (Abholung am Bahnhof Zäziwil)</a>
+    </p>
+  </section>
+
+  <section class="mt-8 container border-t border-gray-300 pt-8">
+    <h3>Schleifkurs Termine</h3>
+    <p>Unsere Tageskurse finden von Januar bis Dezember 2023 statt.</p>
+    <p>Termine für Steinschleif-Kurse sind flexibel und auf Anfrage buchbar!</p>
+  </section>
+
+  <section class="mt-8 container border-t border-gray-300 pt-8">
+    <h3>Kontakt</h3>
+    <p>Haben Sie Fragen oder möchten sich für einen Kurs anmelden? Kontaktieren Sie uns gerne!</p>
+    <p class="font-semibold">E-Mail: <a href="mailto:stein@mail.ch" class="text-blue-600 hover:underline">stein@mail.ch</a></p>
+    <p class="font-semibold">Telefon: 079 609 29 73</p>
+  </section>
+
+  </main>
+
+  <footer class="bg-white min-h-12">
+</footer>
+
+
+</body>
+</html>

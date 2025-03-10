@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/assets/style.css">
+
+  <title>Schulen - Steinschleifen</title>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+  
+  <nav class="bg-white shadow-md text-black">
+  <div class="max-w-5xl mx-auto flex justify-between items-center p-4">
+    <!-- Mobile Menu Button -->
+    <button id="nav-toggle" class="text-black text-2xl md:hidden focus:outline-none" aria-expanded="false">
+      ☰
+    </button>
+
+    <!-- Navigation Menu -->
+    <ul id="nav-menu" class="hidden md:flex space-x-6 text-lg">
+      <li><a href="index.html" class="hover:text-gray-600">Home</a></li>
+      <li><a href="kurse.html" class="hover:text-gray-600">Kurse</a></li>
+      <li><a href="schulen.html" class="hover:text-gray-600">Schulen</a></li>
+      <li><a href="schleifset.html" class="hover:text-gray-600">Schleifset</a></li>
+      <li><a href="ausstellungen.html" class="hover:text-gray-600">Ausstellungen</a></li>
+      <li><a href="kontakt.html" class="hover:text-gray-600">Kontakt</a></li>
+    </ul>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="fixed inset-0 bg-black bg-opacity-90 hidden flex flex-col items-center justify-center space-y-6 text-lg z-50">
+    <button id="nav-close" class="absolute top-5 right-5 text-white text-3xl">&times;</button>
+    <a href="index.html" class="text-white hover:text-gray-600">Home</a>
+    <a href="kurse.html" class="text-white hover:text-gray-600">Kurse</a>
+    <a href="schulen.html" class="text-white hover:text-gray-600">Schulen</a>
+    <a href="schleifset.html" class="text-white hover:text-gray-600">Schleifset</a>
+    <a href="ausstellungen.html" class="text-white hover:text-gray-600">Ausstellungen</a>
+    <a href="kontakt.html" class="text-white hover:text-gray-600">Kontakt</a>
+  </div>
+</nav>
+
+<script>
+  const navToggle = document.getElementById('nav-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const navClose = document.getElementById('nav-close');
+
+  navToggle.addEventListener('click', () => {
+    mobileMenu.classList.remove('hidden');
+    navToggle.setAttribute('aria-expanded', 'true');
+  });
+
+  navClose.addEventListener('click', () => {
+    mobileMenu.classList.add('hidden');
+    navToggle.setAttribute('aria-expanded', 'false');
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener('click', (event) => {
+    if (!mobileMenu.contains(event.target) && !navToggle.contains(event.target)) {
+      mobileMenu.classList.add('hidden');
+      navToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+</script>
+
+
+  <!-- Hero Section -->
+  <section class="relative">
+    <img src="/assets/header-image.png" 
+         alt="Steinschleifen Header" 
+         class="w-full object-cover h-60">
+    <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-30 text-center px-4">
+      <h1 class="text-5xl font-bold text-white">STEINSCHLEIFEN</h1>
+      <p class="text-xl text-white mt-2">Steine schleifen von Hand und auf der Maschine</p>
+    </div>
+  </section>
+
+  <main class="max-w-6xl mx-auto p-6 bg-white mt-6">
+    
+  <section class="text-center mt-8 container">
+    <h2>Schleifen für Schulen</h2>
+    <p class="max-w-3xl mx-auto">
+      Es freut uns, Ihnen das Steineschleifen von Hand vorzustellen. Unser Steinschleif-Angebot für Schulen bietet Kindern und Jugendlichen die Möglichkeit, die faszinierende Welt der Mineralien und das handwerkliche Bearbeiten von Steinen hautnah zu erleben.
+    </p>
+  </section>
+
+  <section class="mt-12 container text-center">
+    <p class="italic text-xl text-gray-600 mb-16">„Das Staunen ist der Anfang der Erkenntnis.“ – Platon</p>
+  </section>
+
+  <section class="mt-20 container flex flex-col md:flex-row items-center gap-16">
+    <div class="md:w-1/2">
+      <h3>Praktisches Arbeiten mit Steinen</h3>
+      <p>Durch das Schleifen, Sägen und Polieren lernen die Schüler den Umgang mit Natursteinen und können eigene Kreationen erschaffen.</p>
+    </div>
+    <div class="md:w-1/2">
+      <img src="/assets/schulen/SchleifenSchule.jpg" alt="Schüler beim Schleifen" class="rounded-3xl w-full h-auto md:h-[300px] object-cover shadow-xl">
+    </div>
+  </section>
+
+  <section class="mt-20 container flex flex-col md:flex-row-reverse items-center gap-16">
+    <div class="md:w-1/2">
+      <h3>Entdecken regionaler Gesteine</h3>
+      <p>Unsere Workshops vermitteln Wissen über heimische Gesteine wie den Kalkstein aus dem Emmental und deren geologische Besonderheiten.</p>
+    </div>
+    <div class="md:w-1/2">
+      <img src="/assets/schulen/Kalkstein-Emmental.jpg" alt="Kalkstein aus dem Emmental" class="rounded-3xl w-full h-auto md:h-[300px] object-cover shadow-xl">
+    </div>
+  </section>
+
+  <section class="mt-20 container flex flex-col md:flex-row items-center gap-16">
+    <div class="md:w-1/2">
+      <h3>Schleifen mit der Maschine</h3>
+      <p>Für die Oberstufen (Zyklus 3) bzw. die WerklehrerInnen sowie Fach- und Kunstgewerbeschulen können wir den Schwerpunkt auf das Steinschleifen mit der Maschine erweitern.</p>
+    </div>
+    <div class="md:w-1/2">
+      <img src="/assets/schulen/Chromdiopsid.jpg" alt="Chromdiopsid Edelstein" class="rounded-3xl w-full h-auto md:h-[300px] object-cover shadow-xl">
+    </div>
+  </section>
+
+  <section class="mt-20 container border-t border-gray-300 pt-10">
+    <h3>Individuelle Beratung und Ausstattung</h3>
+    <p>Auf Wunsch beraten wir Sie zu den Themen, wie Steine sägen, Steine bohren und unterstützen Sie, wenn Sie dieses Angebot realisieren möchten.</p>
+    <p class="italic">„Erzähle mir, und ich vergesse.<br>Zeige mir, und ich erinnere.<br>Lass es mich tun, und ich begreife.“<br>– nach Konfuzius</p>
+  </section>
+
+  <section class="mt-20 container border-t border-gray-300 pt-10">
+    <h3>Steinschleifen für Schulen – Individuelle Einrichtung</h3>
+    <p>Für Schulen richten wir das Steinschleifen von Hand individuell an Ihrem Ort ein. Durch die modulare Ausstattung kann die Anzahl der Personen frei erweitert werden.</p>
+    <ul class="mt-6 list-disc pl-6">
+      <li>Schleifpulver (Körnung: 80, 220, 500, 1000 und Politur)</li>
+      <li>Metallplatten (ø 25cm)</li>
+      <li>Polierbretter (10 x 20cm)</li>
+      <li>Wasserkessel (2 Stk.)</li>
+      <li>Reinigung (Tücher, Wasserspritzer, Seife)</li>
+      <li>Anleitung (Papierform)</li>
+    </ul>
+  </section>
+
+  <section class="mt-8 container border-t border-gray-300 pt-8">
+    <h3>Kontakt</h3>
+    <p>Wir freuen uns, wenn Sie mit uns Kontakt aufnehmen:</p>
+    <p class="font-semibold">E-Mail: <a href="mailto:stein@mail.ch" class="text-blue-600 hover:underline">stein@mail.ch</a></p>
+    <p class="font-semibold">Telefon: 079 609 29 73</p>
+  </section>
+
+  </main>
+
+  <footer class="bg-white min-h-12">
+</footer>
+
+
+</body>
+</html>
