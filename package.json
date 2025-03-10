@@ -1,0 +1,21 @@
+{
+  "name": "steinschleifen",
+  "version": "1.0.0",
+  "description": "Static website for Steinschleifen",
+  "scripts": {
+    "dev": "concurrently --kill-others \"nodemon -e njk,css --ignore dist/ -x node build.js\" \"npx serve dist\"",
+    "build": "node build.js",
+    "serve": "npx serve dist"
+  },
+  "dependencies": {
+    "nunjucks": "^3.2.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.0.1",
+    "postcss": "^8.5.3",
+    "serve": "^14.2.0",
+    "tailwindcss": "^3.4.1"
+  }
+}

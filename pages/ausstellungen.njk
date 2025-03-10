@@ -1,0 +1,47 @@
+{% extends "layout.njk" %}
+
+{% set title = "Ausstellungen" %}
+
+{% block content %}
+  <section class="text-center mt-8 container">
+    <h2>Ausstellungen</h2>
+    <p class="italic text-xl text-gray-600">
+      „Ob jemand die Steine und Gestirne schon verstand,<br>weiss ich nicht, gewiss muss es ein erhabenes Wesen gewesen sein.“
+    </p>
+    <p class="font-semibold mb-24">– Novalis, Bergmann, Philosoph und Dichter</p>
+  </section>
+
+  <section class="mt-16 container flex flex-col md:flex-row items-center gap-16">
+    <div class="md:w-1/2">
+      <h3>Mineralientage Basel</h3>
+      <p>Erleben Sie eine faszinierende Welt der Mineralien auf den Mineralientagen in Basel.</p>
+      <p class="font-semibold mt-4">Datum: 06. – 08. Dezember 2024</p>
+    </div>
+    <div class="md:w-1/2">
+      <img src="/assets/ausstellungen/SteinHandklein.png" alt="Mineralien Ausstellung" class="rounded-3xl w-full h-auto md:h-[300px] object-cover shadow-xl">
+    </div>
+  </section>
+
+  <section class="mt-16 container flex flex-col md:flex-row-reverse items-center gap-16">
+    <div class="md:w-1/2">
+      <h3>Felsenfest Bivio GR</h3>
+      <p>Das Felsenfest in Bivio ist ein einzigartiges Erlebnis für Steinliebhaber und Naturliebhaber.</p>
+      <p class="font-semibold mt-4">Datum: 2025</p>
+    </div>
+    <div class="md:w-1/2">
+      <img src="/assets/ausstellungen/SteinHandklein.png" alt="Felsenfest Bivio" class="rounded-3xl w-full h-auto md:h-[300px] object-cover shadow-xl">
+    </div>
+  </section>
+
+  <section class="mt-16 container flex flex-col md:flex-row items-center gap-16">
+    <div class="md:w-1/2">
+      <h3>Zentralschweizer Mineralien- und Fossilien-Tage</h3>
+      <p>Entdecken Sie beeindruckende Fossilien und Mineralien bei den Zentralschweizer Mineralien- und Fossilien-Tagen.</p>
+      <p class="font-semibold mt-4">Datum: 08. und 09. März 2025, 10:00 – 17:00 Uhr</p>
+      <p>Ort: Chärnshalle Rothenburg</p>
+    </div>
+    <div class="md:w-1/2">
+      <img src="/assets/ausstellungen/SteinHandklein.png" alt="Mineralien- und Fossilien-Tage" class="rounded-3xl w-full h-auto md:h-[300px] object-cover shadow-xl">
+    </div>
+  </section>
+{% endblock %}

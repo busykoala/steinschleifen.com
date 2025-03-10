@@ -1,0 +1,52 @@
+{% extends "layout.njk" %}
+
+{% set title = "Kurse" %}
+
+{% block content %}
+  <section class="text-center mt-8">
+    <h2>Steinschleifkurse</h2>
+    <p class="max-w-3xl mx-auto">
+      Entdecken Sie die Kunst des Steinschleifens – von Hand oder mit der Maschine. Unsere Kurse bieten Ihnen die Möglichkeit, kreative und handwerkliche Techniken zu erlernen und einzigartige Steinkreationen zu gestalten.
+    </p>
+  </section>
+
+  <section class="mt-20 container flex flex-col md:flex-row items-center md:items-start gap-12">
+    <div class="md:w-1/2">
+      <h3>Tageskurse</h3>
+      <p>Ideal für Anfänger und Fortgeschrittene</p>
+      <ul class="leading-relaxed space-y-3 mt-3">
+        <li><span class="font-semibold text-gray-900">Gestalten Sie Schmuck & freie Formen</span><br>lernen Sie das Schleifen, Sägen & Bohren von Steinen.</li>
+        <li><span class="font-semibold text-gray-900">Kurszeiten:</span><br>10 – 17 Uhr, jeweils samstags (Termine weiter unten)</li>
+        <li><span class="font-semibold text-gray-900">Kursgebühr: CHF 190.-</span><br>inkl. Steine, Material & Mittagessen</li>
+        <li class="italic">Preisreduktion auf Anfrage, Kinder erhalten 50% Ermäßigung.</li>
+      </ul>
+    </div>
+    <div class="md:w-1/2 mt-8 md:mt-0">
+      <img src="/assets/kurse/Steinschleif-Kurs.jpg" alt="Steinschleifkurs" class="rounded-lg w-full h-80 object-cover">
+    </div>
+  </section>
+
+  <section class="mt-8 container border-t border-gray-300 pt-8">
+    <h3>Veranstaltungsort</h3>
+    <p>Chalet Liechti, Blasenneuhaus 218, 3508 Arni</p>
+    <p class="mt-4">
+      Anfahrt:
+      <a href="#" class="text-blue-600 hover:underline font-medium">mit dem Auto (Karte)</a>
+      &nbsp;|&nbsp;
+      <a href="#" class="text-blue-600 hover:underline font-medium">mit dem Zug (Abholung am Bahnhof Zäziwil)</a>
+    </p>
+  </section>
+
+  <section class="mt-8 container border-t border-gray-300 pt-8">
+    <h3>Schleifkurs Termine</h3>
+    <p>Unsere Tageskurse finden von Januar bis Dezember 2023 statt.</p>
+    <p>Termine für Steinschleif-Kurse sind flexibel und auf Anfrage buchbar!</p>
+  </section>
+
+  <section class="mt-8 container border-t border-gray-300 pt-8">
+    <h3>Kontakt</h3>
+    <p>Haben Sie Fragen oder möchten sich für einen Kurs anmelden? Kontaktieren Sie uns gerne!</p>
+    <p class="font-semibold">E-Mail: <a href="mailto:stein@mail.ch" class="text-blue-600 hover:underline">stein@mail.ch</a></p>
+    <p class="font-semibold">Telefon: 079 609 29 73</p>
+  </section>
+{% endblock %}

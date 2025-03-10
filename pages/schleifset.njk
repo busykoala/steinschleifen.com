@@ -1,0 +1,55 @@
+{% extends "layout.njk" %}
+
+{% set title = "Schleifset" %}
+
+{% block content %}
+  <section class="text-center mt-8 container">
+    <h2>Schleifset</h2>
+    <p class="max-w-3xl mx-auto">
+      Steinschleifen von Hand – ein vielseitiges Set für kreative, pädagogische und therapeutische Anwendungen.
+    </p>
+  </section>
+
+  <section class="mt-20 container flex flex-col md:flex-row items-center gap-16">
+    <div class="md:w-1/2">
+      <h3>Für verschiedene Einsatzbereiche</h3>
+      <ul class="list-disc pl-6">
+        <li>Künstlerische Tätigkeiten</li>
+        <li>Schulunterricht mit Kindern & Jugendlichen</li>
+        <li>Therapeutische Zwecke</li>
+      </ul>
+    </div>
+    <div class="md:w-1/2">
+      <img src="/assets/schleifset/Schleifset.jpg" alt="Schleifset" class="rounded-3xl w-full h-auto md:h-[300px] object-cover shadow-xl">
+    </div>
+  </section>
+
+  <section class="mt-8 container border-t border-gray-300 pt-10">
+    <h3>Zubehör</h3>
+    <ul class="list-disc pl-6">
+      <li>Anleitung (DE/FR/IT)</li>
+      <li>5 Schleifpulver (80, 220, 500, 1000, Politur)</li>
+      <li>Metallplatte (ø 25cm, rostfrei)</li>
+      <li>Politurbrett (Holz)</li>
+    </ul>
+  </section>
+
+  <section class="mt-8 container border-t border-gray-300 pt-10">
+    <h3>Kosten</h3>
+    <p class="font-bold">CHF 105.-</p>
+    <p class="mt-4">Das Schleifset kann per Mail oder Telefon bestellt werden:</p>
+    <p class="font-semibold mt-6">E-Mail: <a href="mailto:stein@mail.ch" class="text-blue-600 hover:underline">stein@mail.ch</a></p>
+    <p class="font-semibold mt-2">Telefon: 079 609 29 73</p>
+  </section>
+
+  <section class="mt-8 container border-t border-gray-300 pt-10 pb-10">
+    <h3>Weitere Informationen</h3>
+    <ul class="list-disc pl-6">
+      <li>✔ Für Kinder (ab 8 Jahre) und Erwachsene</li>
+      <li>✔ Alle Bestandteile können einzeln nachbestellt werden</li>
+      <li>✔ Fragen Sie uns für individuelle Einrichtungen an</li>
+      <li>✔ Eignet sich als Geschenk</li>
+      <li>✔ Versand möglich</li>
+    </ul>
+  </section>
+{% endblock %}

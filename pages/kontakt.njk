@@ -1,0 +1,43 @@
+{% extends "layout.njk" %}
+
+{% set title = "Kontakt" %}
+
+{% block content %}
+  <section class="mt-16 container border-gray-300">
+    <h3>Kontakt</h3>
+    <p>Haben Sie Fragen oder möchten sich für einen Kurs anmelden? Kontaktieren Sie uns gerne!</p>
+    <p class="mt-8 mb-8">
+      <span class="text-xl font-semibold">Steinschleiferei Brendle</span><br>
+      Blasenneuhaus 218<br>
+      CH-3508 Arni<br>
+      E-Mail: <a href="mailto:stein@mail.ch" class="text-blue-600 hover:underline">stein@mail.ch</a><br>
+      Telefon: 079 609 29 73
+    </p>
+  </section>
+
+  <section class="mt-16 container flex flex-col md:flex-row items-center gap-12">
+    <div class="md:w-1/2">
+      <h3>Über Urs Brendle</h3>
+      <p>
+        Seit 1999 sucht Urs Brendle in der Schweiz und Europa nach edlen Steinen. In seinem Atelier im Emmental auf 1000 M.ü.M.
+        schleift, bohrt und sägt er edle Steine. Urs hat für seine SchülerInnen für den Werkunterricht das Schleifset von Hand entwickelt.
+      </p>
+    </div>
+    <div class="md:w-1/2">
+      <img src="/assets/kontakt/Urs-Brendle.jpg" alt="Urs Brendle" class="rounded-3xl w-full h-auto md:h-[400px] object-cover shadow-xl">
+    </div>
+  </section>
+
+  <section class="mt-16 container flex flex-col md:flex-row-reverse items-center gap-12">
+    <div class="md:w-1/2">
+      <h3>Fair Trade Minerals & Gems</h3>
+      <p>
+        Die Steine werden auf Schweizer Mineralienbörsen und Märkten verkauft. Das Steinschleifen von Hand wird als Aktivität am Stand angeboten.
+        Die Steinschleiferei Brendle ist Mitglied bei Fair Trade Minerals & Gems e. V.
+      </p>
+    </div>
+    <div class="md:w-1/2">
+      <img src="/assets/kontakt/FTMG.jpg" alt="Fair Trade Minerals & Gems" class="rounded-3xl w-full h-auto md:h-[90px] object-cover shadow-xl">
+    </div>
+  </section>
+{% endblock %}
