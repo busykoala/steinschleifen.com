@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Static website for Steinschleifen",
   "scripts": {
-    "dev": "concurrently --kill-others \"nodemon -e njk,css --ignore dist/ -x node build.js\" \"npx serve dist\"",
+    "dev": "concurrently --kill-others \"nodemon -e njk,css --ignore docs/ -x node build.js\" \"npx serve docs\"",
     "build": "node build.js",
     "serve": "npx serve dist"
   },

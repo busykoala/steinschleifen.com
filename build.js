@@ -10,7 +10,7 @@ nunjucks.configure("templates", { autoescape: true });
 // Folders
 const pagesDir = "./pages";
 const assetsDir = "./assets";
-const outputDir = "./dist";
+const outputDir = "./docs";
 
 // Ensure output directory exists
 if (!fs.existsSync(outputDir)) {
@@ -52,7 +52,7 @@ copyAssets();
 console.log("🎨 Processing Tailwind CSS...");
 
 try {
-  execSync(`npx tailwindcss -i ./assets/style.css -o ./dist/assets/style.css --minify`, {
+  execSync(`npx tailwindcss -i ./assets/style.css -o ./docs/assets/style.css --minify`, {
     stdio: "inherit",
     env: { ...process.env, NODE_ENV: "production" }
   });
@@ -62,7 +62,7 @@ try {
   process.exit(1);
 }
 
-console.log("✅ Static site generated in 'dist/'!");
+console.log("✅ Static site generated in 'docs/'!");
 
 
-console.log("✅ Static site generated in 'dist/'!");
+console.log("✅ Static site generated in 'docs/'!");
